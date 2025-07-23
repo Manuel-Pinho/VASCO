@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="10dp">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        style="@style/Backgroundrectangle"
+        >
+
+        <ImageButton
+            android:id="@+id/btnArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            style="@style/color_tint"
+            android:src="@drawable/ic_down_arrow"
+            android:contentDescription="Pesquisar" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TEXTCOLOR"
+            android:text="Vasco"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/color_tint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chat"
+            android:contentDescription="Chat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/bottom_nav">
+
+        <WebView
+            android:id="@+id/webViewInfarmed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <!-- Barra inferior -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_options"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"/>
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"
+            />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_setting"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="8dp"
+    android:background="?attr/selectableItemBackground"> <!-- Feedback de clique -->
+
+    <ImageView
+        android:id="@+id/ivMedicamentoImagem"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:src="@mipmap/ic_launcher" /> <!-- Placeholder, será carregado via URL -->
+
+    <ImageButton
+        android:id="@+id/btnAddMedicamentoToList"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/bg_circle_button_accent"
+        android:padding="10dp"
+        app:tint="@android:color/white"
+        android:contentDescription="Adicionar à lista do utilizador"/>
+
+    <ImageButton
+        android:id="@+id/btnAddFavoutireToList"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toStartOf="@id/btnAddMedicamentoToList"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/btn_star_big_on"
+        android:background="@drawable/bg_favourite_circle"
+        android:padding="10dp"
+        app:tint="@android:color/white"
+        android:contentDescription="Adicionar à lista Favoritos"/>
+
+    <TextView
+        android:id="@+id/tvMedicamentoNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivMedicamentoImagem"
+        android:layout_toStartOf="@id/btnAddFavoutireToList"
+        android:layout_centerVertical="true"
+        android:text="@string/medication_name_label"
+        style="@style/TEXTCOLOR"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+</RelativeLayout>

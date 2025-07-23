@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/color_tint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Pesquisar" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TEXTCOLOR"
+            android:text="Vasco"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            style="@style/color_tint"
+            android:src="@drawable/ic_chat"
+            android:contentDescription="Chat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rectContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:id="@+id/btnFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            style="@style/Background_caixa_texto2"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                style="@style/color_tint"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/tvFavoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favoritos"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            style="@style/Background_caixa_texto2"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_search"
+                style="@style/color_tint"/>
+
+            <TextView
+                android:id="@+id/tvPesquisar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesquisar"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnArrow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_up_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_setting"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+    </LinearLayout>
+
+</RelativeLayout>

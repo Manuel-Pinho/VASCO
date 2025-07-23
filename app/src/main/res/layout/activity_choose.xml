@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    style="@style/Background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Texto superior -->
+        <TextView
+            android:id="@+id/titleText"
+            style="@style/TEXTCOLOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/choose_interface_image"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <!-- Interface Normal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/BtnNormal"
+                android:layout_width="160dp"
+                android:layout_height="300dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/normal"
+                style="@style/BackgroundrectangleFoto"
+                android:outlineAmbientShadowColor="@color/black"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="Interface normal" />
+
+            <TextView
+                style="@style/TEXTCOLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interface_normal"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <!-- Interface Simples -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/BtnSimple"
+                android:src="@drawable/simple"
+                android:layout_width="160dp"
+                android:layout_height="300dp"
+                style="@style/BackgroundrectangleFoto"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/interface_simple"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                style="@style/TEXTCOLOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interface simples"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

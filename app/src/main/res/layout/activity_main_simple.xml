@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    style="@style/Background"
+    android:layout_marginTop="10dp">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        style="@style/Background">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vasco"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            style="@style/TEXTCOLOR"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/bottom_nav"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        app:backgroundTint="?attr/colorAccent"
+        android:contentDescription="Adicionar Medicamento"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:fabSize="normal"/>
+
+    <!-- Conteúdo principal -->
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_nav"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/robotImage"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/robot"
+            android:contentDescription="Imagem do robô Vasco"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/labelTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_med_in"
+            android:textSize="16sp"
+            style="@style/TEXTCOLOR"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hh:mm"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            style="@style/TEXTCOLOR"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Informational message if no meds -->
+        <TextView
+            android:id="@+id/tvNoMedsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhum medicamento agendado para hoje."
+            android:textSize="16sp"
+            style="@style/TEXTCOLOR"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Horizontal scrollable medication list with arrows -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevMed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_left_arrow"
+                android:contentDescription="Anterior"
+                android:visibility="visible"
+                android:tint="?attr/colorOnBackground"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNextMeds"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_toEndOf="@id/btnPrevMed"
+                android:layout_toStartOf="@id/btnNextMed"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:scrollbars="horizontal"/>
+
+            <ImageButton
+                android:id="@+id/btnNextMed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_right_arrow"
+                android:contentDescription="Próximo"
+                android:visibility="visible"
+                android:tint="?attr/colorOnBackground"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_options"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"/>
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"/>
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_setting"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"/>
+    </LinearLayout>
+</RelativeLayout>

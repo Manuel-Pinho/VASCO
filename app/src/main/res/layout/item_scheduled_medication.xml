@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/itemScheduledMedicationLayout"
+    android:background="@drawable/bg_scheduled_med_normal"> <!-- Ver abaixo -->
+
+    <LinearLayout
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/tvScheduledTime"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tvScheduledMedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pill_label"
+            style="@style/TEXTCOLOR"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvScheduledMedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_be_taken"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:visibility="gone"/> <!-- Mostrar/esconder conforme o estado -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvScheduledTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00h"
+        style="@style/TEXTCOLOR"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

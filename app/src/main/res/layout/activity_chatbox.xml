@@ -1,0 +1,144 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="10dp">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Pesquisar"
+            style="@style/color_tint" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vasco"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            style="@style/TEXTCOLOR" />
+
+        <ImageButton
+            android:id="@+id/btnArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_down_arrow"
+            android:contentDescription="Chat"
+            style="@style/color_tint" />
+    </LinearLayout>
+
+    <!-- Imagem do robô -->
+    <ImageView
+        android:id="@+id/robotImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/robot"
+        android:contentDescription="Imagem do robô Vasco" />
+
+    <!-- Área de respostas/chat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMensagens"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/input_area"
+        android:layout_below="@id/robotImage"
+        style="@style/TEXTCOLOR"
+        android:padding="8dp"
+        />
+
+    <!-- Área de entrada (EditText + enviar) -->
+    <LinearLayout
+        android:id="@+id/input_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        style="@style/Backgroundrectangle">
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_ask_vasco"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:textSize="20sp"
+            style="@style/Background_caixa_texto"
+            android:padding="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_right_arrow"
+            android:contentDescription="Enviar"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint"/>
+    </LinearLayout>
+
+    <!-- Barra inferior -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        style="@style/Backgroundrectangle">
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_options"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_setting"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/color_tint" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nome do app -->
+    <string name="app_name">VASCO</string>
+
+    <!-- OAuth client ID (sem aspas) -->
+    <string name="default_web_client_id">280965537173-gasa787emikhsir5gv05vkommcs78d09.apps.googleusercontent.com</string>
+
+    <!-- Listas de seleção -->
+    <string-array name="language_array">
+        <item>Португальский</item>
+        <item>Английский</item>
+        <item>Русский</item>
+        <item>Французский</item>
+        <item>Испанский</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Мужчина</item>
+        <item>Женщина</item>
+        <item>Другое</item>
+    </string-array>
+
+    <!-- Дубли и метки -->
+    <string name="hint_ask_vasco">Спросите у Vasco</string>
+    <string name="choose_interface_image">Выберите изображение для выбора интерфейса:</string>
+    <string name="interface_normal">Обычный интерфейс</string>
+    <string name="interface_simple">Простой интерфейс</string>
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="register_account">Зарегистрировать аккаунт</string>
+    <string name="sign_in_google">Войти через Google</string>
+
+    <!-- Профиль и личные данные -->
+    <string name="month">Месяц</string>
+    <string name="next_med_in">Следующее лекарство через:</string>
+    <string name="user_profile">Профиль пользователя</string>
+    <string name="name_label">Имя</string>
+    <string name="email_label">Электронная почта</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="gender_label">Пол</string>
+
+    <!-- Действия и кнопки -->
+    <string name="confirm_changes">Подтвердить изменения</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="confirm_password">Подтвердить пароль</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="go_to_login">Перейти к входу</string>
+    <string name="search_label">Поиск</string>
+    <string name="chat_label">Чат</string>
+    <string name="change_mode">Сменить режим</string>
+    <string name="logout_label">Выйти</string>
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="notifications_label">Уведомления</string>
+    <string name="dark_mode_label">Тёмная тема</string>
+    <string name="language_label">Язык</string>
+    <string name="cancel">Отмена</string>
+    <string name="mark_as_taken">Отметить как принято</string>
+    <string name="remove_from_schedule">Удалить из расписания</string>
+    <string name="schedule_label">Расписание</string>
+    <string name="original_instructions">Исходные инструкции</string>
+    <string name="pill_quantity">Количество таблеток</string>
+    <string name="medication_image">Изображение лекарства</string>
+    <string name="medication_name_dosage">Название и дозировка</string>
+    <string name="search_medication">Поиск лекарства</string>
+    <string name="enter_med_name">Введите название лекарства</string>
+    <string name="to_be_taken">К приёму</string>
+    <string name="pill_label">Таблетка</string>
+    <string name="medication_name_label">Название лекарства</string>
+
+
+        <string name="error_invalid_email">Неверный адрес электронной почты</string>
+        <string name="error_empty_password">Пароль не может быть пустым</string>
+        <string name="login_success">Вход выполнен успешно!</string>
+        <string name="error_login">Ошибка входа</string>
+
+        <string name="password_recovery_sent">Письмо для восстановления отправлено!</string>
+        <string name="password_recovery_failed">Не удалось отправить письмо для восстановления: %1$s</string>
+
+        <string name="google_account_not_registered">Аккаунт Google не зарегистрирован</string>
+        <string name="google_login_success">Вход через Google выполнен успешно!</string>
+        <string name="google_auth_failed">Ошибка аутентификации Google: %1$s</string>
+        <string name="google_login_failed">Ошибка входа через Google: %1$s</string>
+
+
+
+    <!-- RegisterActivity -->
+    <string name="error_fill_fields">Заполните все поля</string>
+    <string name="error_passwords_mismatch">Пароли не совпадают</string>
+    <string name="error_password_min_length">Пароль должен содержать не менее 6 символов</string>
+    <string name="register_success">Регистрация завершена!</string>
+    <string name="error_firestore">Ошибка Firestore: %1$s</string>
+    <string name="register_failed">Не удалось зарегистрироваться: %1$s</string>
+    <string name="google_signin_failed">Ошибка входа через Google: %1$s</string>
+    <string name="register_google_success">Регистрация через Google завершена! Пожалуйста, войдите.</string>
+    <string name="error_register_google">Ошибка регистрации Google: %1$s</string>
+    <string name="account_exists_use_login">Аккаунт уже существует. Используйте вход.</string>
+    <string name="error_google_auth_failed">Ошибка аутентификации Google: %1$s</string>
+
+    <!-- UserActivity -->
+    <string name="error_fill_both_fields">Заполните оба поля</string>
+    <string name="datepicker_dob_title">Выберите дату рождения</string>
+    <string name="hint_current_password">Текущий пароль</string>
+    <string name="dialog_confirm_current_password_title">Подтвердите текущий пароль</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="password_update_success">Пароль успешно обновлён!</string>
+    <string name="error_update_password_failed">Не удалось обновить пароль: %1$s</string>
+    <string name="error_current_password_incorrect">Неверный текущий пароль: %1$s</string>
+    <string name="profile_saved_success">Профиль успешно сохранён!</string>
+    <string name="error_save_profile">Ошибка сохранения профиля: %1$s</string>
+    <string name="error_enter_current_password">Введите текущий пароль</string>
+    <string name="error_old_and_new_password_same">Старый и новый пароли не могут совпадать</string>
+
+    <!-- SettingsActivity -->
+    <string name="logout_success">Вы вышли</string>
+    <string name="dialog_delete_account_title">Удалить аккаунт</string>
+    <string name="dialog_delete_account_message">Вы уверены, что хотите удалить аккаунт? Это действие нельзя отменить.</string>
+    <string name="delete">Удалить</string>
+    <string name="account_deleted_success">Аккаунт успешно удалён.</string>
+    <string name="error_delete_account">Ошибка при удалении аккаунта: %1$s</string>
+    <string name="error_no_user_authenticated">Нет аутентифицированного пользователя</string>
+
+    <!-- NotificationReceiver -->
+    <string name="notification_channel_name">Канал уведомлений по умолчанию</string>
+    <string name="notification_channel_description">Канал по умолчанию для уведомлений приложения</string>
+    <string name="notification_title">Новое уведомление</string>
+    <string name="notification_text">Это уведомление, запущенное приёмником широковещательных сообщений.</string>
+
+    <!-- ScheduledMedication defaults -->
+    <string name="default_quantity_to_take">1 таблетка</string>
+    <string name="status_pending">К приёму</string>
+    <string name="status_taken">Принято</string>
+    <string name="status_ignored">Пропущено</string>
+
+    <!-- ScheduledMedicationAdapter -->
+    <string name="scheduled_med_item_text">%1$s %2$s %3$s</string>
+    <string name="scheduled_status_pending">К приёму</string>
+    <string name="scheduled_status_taken">Принято</string>
+    <string name="scheduled_status_ignored">Пропущено</string>
+
+    <!-- ScheduleParser defaults -->
+    <string name="default_unit_dose">доза</string>
+    <string name="default_quantity_format">1 %1$s</string>
+</resources>

@@ -1,0 +1,145 @@
+<resources>
+    <!-- Nome do app -->
+    <string name="app_name">VASCO</string>
+
+    <!-- OAuth client ID (sem aspas) -->
+    <string name="default_web_client_id">280965537173-gasa787emikhsir5gv05vkommcs78d09.apps.googleusercontent.com</string>
+
+    <!-- Listas de seleção -->
+    <string-array name="language_array">
+        <item>Portugués</item>
+        <item>Inglés</item>
+        <item>Ruso</item>
+        <item>Francés</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <!-- Dicas e rótulos -->
+    <string name="hint_ask_vasco">Pregunta a Vasco</string>
+    <string name="choose_interface_image">Selecciona la imagen para elegir una interfaz:</string>
+    <string name="interface_normal">Interfaz normal</string>
+    <string name="interface_simple">Interfaz sencilla</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">¿Olvidaste la contraseña?</string>
+    <string name="register_account">Registrar cuenta</string>
+    <string name="sign_in_google">Iniciar sesión con cuenta de Google</string>
+
+    <!-- Perfil e dados pessoais -->
+    <string name="month">Mes</string>
+    <string name="next_med_in">Próximo medicamento en:</string>
+    <string name="user_profile">Perfil de usuario</string>
+    <string name="name_label">Nombre</string>
+    <string name="email_label">Correo electrónico</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="gender_label">Género</string>
+
+    <!-- Ações e botões -->
+    <string name="confirm_changes">Confirmar cambios</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="register">Registrar</string>
+    <string name="go_to_login">Ir a la página de inicio de sesión</string>
+    <string name="search_label">Buscar</string>
+    <string name="chat_label">Chat</string>
+    <string name="change_mode">Cambiar modo</string>
+    <string name="logout_label">Cerrar sesión</string>
+    <string name="delete_account">Eliminar cuenta</string>
+    <string name="notifications_label">Notificaciones</string>
+    <string name="dark_mode_label">Modo oscuro</string>
+    <string name="language_label">Idioma</string>
+    <string name="cancel">Cancelar</string>
+    <string name="mark_as_taken">Marcar como tomado</string>
+    <string name="remove_from_schedule">Eliminar del horario</string>
+    <string name="schedule_label">Horario</string>
+    <string name="original_instructions">Instrucciones originales</string>
+    <string name="pill_quantity">Cantidad de pastillas</string>
+    <string name="medication_image">Imagen del medicamento</string>
+    <string name="medication_name_dosage">Nombre y dosis del medicamento</string>
+    <string name="search_medication">Buscar medicamento</string>
+    <string name="enter_med_name">Introduce el nombre del medicamento</string>
+    <string name="to_be_taken">Por tomar</string>
+    <string name="pill_label">Pastilla</string>
+    <string name="medication_name_label">Nombre del medicamento</string>
+
+
+        <string name="error_invalid_email">Dirección de correo electrónico inválida</string>
+        <string name="error_empty_password">La contraseña no puede estar vacía</string>
+        <string name="login_success">¡Inicio de sesión exitoso!</string>
+        <string name="error_login">Error al iniciar sesión</string>
+
+        <string name="password_recovery_sent">¡Correo de recuperación enviado!</string>
+        <string name="password_recovery_failed">Error al enviar el correo de recuperación: %1$s</string>
+
+        <string name="google_account_not_registered">Cuenta de Google no registrada</string>
+        <string name="google_login_success">¡Inicio de sesión con Google exitoso!</string>
+        <string name="google_auth_failed">Autenticación de Google fallida: %1$s</string>
+        <string name="google_login_failed">Error de inicio de sesión con Google: %1$s</string>
+
+
+
+    <!-- RegisterActivity -->
+    <string name="error_fill_fields">Rellena todos los campos</string>
+    <string name="error_passwords_mismatch">Las contraseñas no coinciden</string>
+    <string name="error_password_min_length">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="register_success">¡Registro completado!</string>
+    <string name="error_firestore">Error de Firestore: %1$s</string>
+    <string name="register_failed">Registro fallido: %1$s</string>
+    <string name="google_signin_failed">Error de inicio de sesión con Google: %1$s</string>
+    <string name="register_google_success">¡Registro con Google completado! Por favor, inicia sesión.</string>
+    <string name="error_register_google">Error al registrar cuenta de Google: %1$s</string>
+    <string name="account_exists_use_login">La cuenta ya existe. Usa el inicio de sesión.</string>
+    <string name="error_google_auth_failed">La autenticación de Google falló: %1$s</string>
+
+    <!-- UserActivity -->
+    <string name="error_fill_both_fields">Rellena ambos campos</string>
+    <string name="datepicker_dob_title">Selecciona la fecha de nacimiento</string>
+    <string name="hint_current_password">Contraseña actual</string>
+    <string name="dialog_confirm_current_password_title">Confirma la contraseña actual</string>
+    <string name="confirm">Confirmar</string>
+    <string name="password_update_success">¡Contraseña actualizada con éxito!</string>
+    <string name="error_update_password_failed">Error al actualizar la contraseña: %1$s</string>
+    <string name="error_current_password_incorrect">Contraseña actual incorrecta: %1$s</string>
+    <string name="profile_saved_success">¡Perfil guardado con éxito!</string>
+    <string name="error_save_profile">Error al guardar el perfil: %1$s</string>
+    <string name="error_enter_current_password">Introduce la contraseña actual</string>
+    <string name="error_old_and_new_password_same">La contraseña antigua y la nueva no pueden ser iguales</string>
+
+    <!-- SettingsActivity -->
+    <string name="logout_success">Sesión cerrada</string>
+    <string name="dialog_delete_account_title">Eliminar cuenta</string>
+    <string name="dialog_delete_account_message">¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no se puede deshacer.</string>
+    <string name="delete">Eliminar</string>
+    <string name="account_deleted_success">Cuenta eliminada con éxito.</string>
+    <string name="error_delete_account">Error al eliminar la cuenta: %1$s</string>
+    <string name="error_no_user_authenticated">Ningún usuario autenticado</string>
+
+    <!-- NotificationReceiver -->
+    <string name="notification_channel_name">Canal de notificaciones predeterminado</string>
+    <string name="notification_channel_description">Canal predeterminado para las notificaciones de la aplicación</string>
+    <string name="notification_title">Nueva notificación</string>
+    <string name="notification_text">Esta es la notificación activada por el BroadcastReceiver.</string>
+
+    <!-- ScheduledMedication defaults -->
+    <string name="default_quantity_to_take">1 pastilla</string>
+    <string name="status_pending">Por tomar</string>
+    <string name="status_taken">Tomado</string>
+    <string name="status_ignored">Ignorado</string>
+
+    <!-- ScheduledMedicationAdapter -->
+    <string name="scheduled_med_item_text">%1$s de %2$s %3$s</string>
+    <string name="scheduled_status_pending">Por tomar</string>
+    <string name="scheduled_status_taken">Tomado</string>
+    <string name="scheduled_status_ignored">Ignorado</string>
+
+    <!-- ScheduleParser defaults -->
+    <string name="default_unit_dose">dosis</string>
+    <string name="default_quantity_format">1 %1$s</string>
+
+</resources>

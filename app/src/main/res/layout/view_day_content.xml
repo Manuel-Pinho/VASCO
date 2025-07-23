@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    style="@style/Background">
+
+    <TextView
+        android:id="@+id/tvSelectedDayContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="Informação do dia aparecerá aqui."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvScheduledMedsToday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:overScrollMode="never"/>
+
+</LinearLayout> 

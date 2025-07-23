@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/Background"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivDialogMedImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_default_med_icon"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="Imagem do Medicamento" />
+
+    <TextView
+        android:id="@+id/tvDialogMedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="@string/medication_name_dosage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogMedQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="@string/pill_quantity"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogMedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="@string/schedule_label"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogMedInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="@string/original_instructions"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/> <!-- Mostrar se houver instruções -->
+
+    <TextView
+        android:id="@+id/tvDialogMedNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TEXTCOLOR"
+        android:text="Notas originais..."
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/> <!-- Mostrar se houver notas -->
+
+
+    <Button
+        android:id="@+id/btnDialogMarkAsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:layout_gravity="center"
+        app:backgroundTint="@null"
+        android:text="@string/mark_as_taken"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDialogRemoveSchedule"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:backgroundTint="@null"
+        style="@style/Button"
+        android:text="@string/remove_from_schedule"/>
+
+    <Button
+        android:id="@+id/btnDialogCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/Button"
+        app:backgroundTint="@null"
+        android:text="@string/cancel"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background">
+
+
+    <!-- Conteúdo rolável -->
+    <ScrollView
+        android:id="@+id/scrollForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnRegister"
+        android:overScrollMode="never"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                style="@style/TEXTCOLOR"
+                android:text="@string/register"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="31sp"
+                android:textStyle="normal" />
+
+            <!-- Nome -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:text="@string/name_label" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                style="@style/Background_caixa_texto"
+                android:padding="8dp"
+                />
+
+            <!-- Mail -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:text="@string/email_label" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                style="@style/Background_caixa_texto"
+
+                 />
+
+            <!-- Palavra‑pass -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                style="@style/Background_caixa_texto"
+                android:drawableEnd="@drawable/ic_eye_off"
+                android:drawableTint="@color/icon_tint"
+
+                 />
+
+
+            <!-- Confirmar Palavra‑pass -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXTCOLOR"
+                android:textSize="16sp"
+                android:text="@string/confirm_password"
+                />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                style="@style/Background_caixa_texto"
+                android:drawableEnd="@drawable/ic_eye_off"
+                android:drawableTint="@color/icon_tint"
+                />
+
+            <!-- Link para login -->
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:textSize="16sp"
+                android:text="@string/go_to_login"
+                android:textColor="#0022FF" />
+
+            <!-- Divisor com "OU" -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    style="@style/TEXTCOLOR" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    style="@style/TEXTCOLOR"
+                    android:text="OU" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    style="@style/TEXTCOLOR"
+                    />
+
+            </LinearLayout>
+
+            <!-- Botão Google -->
+            <Button
+                android:id="@+id/btnGoogleSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="32dp"
+                style="@style/Button_Google"
+                app:backgroundTint="@null"
+                android:drawableLeft="@drawable/ic_google"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:text="@string/sign_in_google"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botão Registar fixo em baixo -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        style="@style/Button"
+        app:backgroundTint="@null"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

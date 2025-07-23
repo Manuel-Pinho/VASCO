@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "280965537173",
+    "project_id": "vasco-95bbb",
+    "storage_bucket": "vasco-95bbb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280965537173:android:ba998623bc5d026935ea9c",
+        "android_client_info": {
+          "package_name": "com.example.vasco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280965537173-1en9du8jagjp86gaiqpdh0bgl2hdjctk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vasco",
+            "certificate_hash": "b4a64ab80ca9ef943a2fa54c40a50dc84d0d3f82"
+          }
+        },
+        {
+          "client_id": "280965537173-gasa787emikhsir5gv05vkommcs78d09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAld7aPgAdpAlsB5yKZNBMQ9kSimASTTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280965537173-gasa787emikhsir5gv05vkommcs78d09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

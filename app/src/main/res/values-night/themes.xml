@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.VASCO" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+
+        <item name="colorPrimary">#000</item>
+        <!-- cor da barra de notificacao-->
+        <item name="colorPrimaryVariant">#000000</item>
+        <!-- cor dos icon da barra de notificacao-->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- cor dos icons dentro dos botoes-->
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="colorAccent">#10FF00</item>
+    </style>
+
+    <style name="DatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">#000</item>
+        <item name="colorAccent">#000</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:background">@drawable/backgrounddark</item>
+    </style>
+
+    <style name="Backgroundrectangle">
+        <item name="android:background">@drawable/rectangle_background_dark</item>
+    </style>
+
+    <style name="BackgroundrectangleFoto">
+        <item name="android:background">@drawable/rectangle_background_dark_foto</item>
+    </style>
+
+    <style name="Background_caixa_texto">
+        <item name="android:background">@drawable/caixa_textodark</item>
+    </style>
+
+    <style name="Background_caixa_texto2">
+        <item name="android:background">@drawable/caixa_textodark2</item>
+    </style>
+
+    <style name="TEXTCOLOR">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Button_Google">
+        <item name="android:background">@drawable/botao_background_clickdark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/botao_background_click_registo_dark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button_lucro">
+        <item name="android:background">@drawable/lucro_botaodark</item> <!-- Usa o drawable para tema escuro -->
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Button_delete">
+        <item name="android:background">@drawable/eliminate_dark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="color_tint">
+        <item name="android:tint">#FFFFFF</item>
+    </style>
+
+    <style name="TextAppearance.Calendar.DayNormal" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">?android:attr/textColorSecondary</item> <!-- Cor padrão do texto secundário -->
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.Calendar.DayNormal.Bold" parent="TextAppearance.Calendar.DayNormal">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Calendar.DaySelected" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#D32F2F</item> <!-- Exemplo: Vermelho escuro para texto do dia selecionado -->
+        <item name="android:textSize">13sp</item> <!-- Pode ser um pouco maior -->
+    </style>
+    <style name="TextAppearance.Calendar.DaySelected.Bold" parent="TextAppearance.Calendar.DaySelected">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextAppearance.Calendar.DayToday" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#388E3C</item> <!-- Exemplo: Verde escuro para texto do dia "hoje" -->
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.Calendar.DayToday.Bold" parent="TextAppearance.Calendar.DayToday">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <color name="icon_tint" tools:ignore="MissingDefaultResource">#000</color>
+</resources>

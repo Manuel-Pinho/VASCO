@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nome do app -->
+    <string name="app_name">VASCO</string>
+
+    <!-- OAuth client ID (sem aspas) -->
+    <string name="default_web_client_id">280965537173-gasa787emikhsir5gv05vkommcs78d09.apps.googleusercontent.com</string>
+
+    <!-- Listas de seleção -->
+    <string-array name="language_array">
+        <item>Portugais</item>
+        <item>Anglais</item>
+        <item>Russe</item>
+        <item>Français</item>
+        <item>Espagnol</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Masculin</item>
+        <item>Féminin</item>
+        <item>Autre</item>
+    </string-array>
+
+    <!-- Dicas e rótulos -->
+    <string name="hint_ask_vasco">Demandez à Vasco</string>
+    <string name="choose_interface_image">Sélectionnez l’image pour choisir une interface :</string>
+    <string name="interface_normal">Interface normale</string>
+    <string name="interface_simple">Interface simple</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="register_account">Créer un compte</string>
+    <string name="sign_in_google">Se connecter avec Google</string>
+
+    <!-- Perfil e dados pessoais -->
+    <string name="month">Mois</string>
+    <string name="next_med_in">Prochain médicament dans :</string>
+    <string name="user_profile">Profil utilisateur</string>
+    <string name="name_label">Nom</string>
+    <string name="email_label">E-mail</string>
+    <string name="date_of_birth">Date de naissance</string>
+    <string name="gender_label">Genre</string>
+
+    <!-- Ações e botões -->
+    <string name="confirm_changes">Confirmer les modifications</string>
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="register">S’inscrire</string>
+    <string name="go_to_login">Aller à la connexion</string>
+    <string name="search_label">Rechercher</string>
+    <string name="chat_label">Discussion</string>
+    <string name="change_mode">Changer de mode</string>
+    <string name="logout_label">Se déconnecter</string>
+    <string name="delete_account">Supprimer le compte</string>
+    <string name="notifications_label">Notifications</string>
+    <string name="dark_mode_label">Mode sombre</string>
+    <string name="language_label">Langue</string>
+    <string name="cancel">Annuler</string>
+    <string name="mark_as_taken">Marquer comme pris</string>
+    <string name="remove_from_schedule">Retirer du planning</string>
+    <string name="schedule_label">Planning</string>
+    <string name="original_instructions">Instructions originales</string>
+    <string name="pill_quantity">Quantité de comprimés</string>
+    <string name="medication_image">Image du médicament</string>
+    <string name="medication_name_dosage">Nom et dosage du médicament</string>
+    <string name="search_medication">Rechercher un médicament</string>
+    <string name="enter_med_name">Entrez le nom du médicament</string>
+    <string name="to_be_taken">À prendre</string>
+    <string name="pill_label">Comprimé</string>
+    <string name="medication_name_label">Nom du médicament</string>
+
+
+        <string name="error_invalid_email">Adresse e-mail invalide</string>
+        <string name="error_empty_password">Le mot de passe ne peut pas être vide</string>
+        <string name="login_success">Connexion réussie !</string>
+        <string name="error_login">Erreur de connexion</string>
+
+        <string name="password_recovery_sent">E-mail de récupération envoyé !</string>
+        <string name="password_recovery_failed">Échec de l’envoi de l’e-mail de récupération : %1$s</string>
+
+        <string name="google_account_not_registered">Compte Google non enregistré</string>
+        <string name="google_login_success">Connexion Google réussie !</string>
+        <string name="google_auth_failed">Échec de l’authentification Google : %1$s</string>
+        <string name="google_login_failed">Échec de la connexion Google : %1$s</string>
+
+
+
+    <!-- RegisterActivity -->
+    <string name="error_fill_fields">Veuillez remplir tous les champs</string>
+    <string name="error_passwords_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="register_success">Inscription réussie !</string>
+    <string name="error_firestore">Erreur Firestore : %1$s</string>
+    <string name="register_failed">Échec de l’inscription : %1$s</string>
+    <string name="google_signin_failed">Échec de la connexion Google : %1$s</string>
+    <string name="register_google_success">Inscription Google réussie ! Veuillez vous connecter.</string>
+    <string name="error_register_google">Erreur d’enregistrement Google : %1$s</string>
+    <string name="account_exists_use_login">Compte déjà existant. Veuillez vous connecter.</string>
+    <string name="error_google_auth_failed">Échec de l’authentification Google : %1$s</string>
+
+    <!-- UserActivity -->
+    <string name="error_fill_both_fields">Veuillez remplir les deux champs</string>
+    <string name="error_password_min_length">Le mot de passe doit comporter ≥ 6 caractères</string>
+    <string name="datepicker_dob_title">Sélectionner la date de naissance</string>
+    <string name="hint_current_password">Mot de passe actuel</string>
+    <string name="dialog_confirm_current_password_title">Confirmez le mot de passe actuel</string>
+    <string name="confirm">Confirmer</string>
+    <string name="password_update_success">Mot de passe mis à jour avec succès !</string>
+    <string name="error_update_password_failed">Échec de la mise à jour du mot de passe : %1$s</string>
+    <string name="error_current_password_incorrect">Mot de passe actuel incorrect : %1$s</string>
+    <string name="profile_saved_success">Profil enregistré avec succès !</string>
+    <string name="error_save_profile">Erreur d’enregistrement du profil : %1$s</string>
+    <string name="error_enter_current_password">Veuillez entrer le mot de passe actuel</string>
+    <string name="error_old_and_new_password_same">L’ancien et le nouveau mot de passe ne peuvent pas être identiques</string>
+
+    <!-- SettingsActivity -->
+    <string name="logout_success">Déconnexion effectuée</string>
+    <string name="dialog_delete_account_title">Supprimer le compte</string>
+    <string name="dialog_delete_account_message">Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.</string>
+    <string name="delete">Supprimer</string>
+    <string name="account_deleted_success">Compte supprimé avec succès.</string>
+    <string name="error_delete_account">Erreur lors de la suppression du compte : %1$s</string>
+    <string name="error_no_user_authenticated">Aucun utilisateur authentifié</string>
+
+    <!-- NotificationReceiver -->
+    <string name="notification_channel_name">Canal de notifications par défaut</string>
+    <string name="notification_channel_description">Canal par défaut pour les notifications de l’application</string>
+    <string name="notification_title">Nouvelle notification</string>
+    <string name="notification_text">Ceci est la notification déclenchée par le BroadcastReceiver.</string>
+
+    <!-- ScheduledMedication defaults -->
+    <string name="default_quantity_to_take">1 comprimé</string>
+    <string name="status_pending">À prendre</string>
+    <string name="status_taken">Pris</string>
+    <string name="status_ignored">Ignoré</string>
+
+    <!-- ScheduledMedicationAdapter -->
+    <string name="scheduled_med_item_text">%1$s de %2$s %3$s</string>
+    <string name="scheduled_status_pending">À prendre</string>
+    <string name="scheduled_status_taken">Pris</string>
+    <string name="scheduled_status_ignored">Ignoré</string>
+
+    <!-- ScheduleParser defaults -->
+    <string name="default_unit_dose">dose</string>
+    <string name="default_quantity_format">1 %1$s</string>
+</resources>
